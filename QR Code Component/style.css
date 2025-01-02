@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=IM+Fell+Double+Pica&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=IM+Fell+Double+Pica&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@400&display=swap');
+
+:root {
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+    --white: hsl(0, 0%, 100%);
+    --font: 15px;
+    --outfit: 'Outfit', sans-serif;
+    --mobile: 375px;
+    --desktop: 1440px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: var(--slate-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    height: 499px;
+    width: 320px;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.qr-card {
+    margin: 16px 16px 24px 16px;
+}
+
+.qr-card img {
+    border-radius: 10px;
+    height: 288px;
+    width: 100%;
+}
+
+.qr-details {
+    text-align: center;
+    margin: 0px 16px 40px 16px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.qr-details p:nth-of-type(1) {
+    color: var(--slate-900);
+    font-size: 22px; 
+    letter-spacing: 0px;
+    font-weight: 750;
+    font-family: var(--outfit);
+}
+
+.qr-details p:nth-of-type(2) {
+    color: var(--slate-500);
+    font-size: var(--font);
+    letter-spacing: 0.6px;
+    font-family: var(--outfit);
+    font-weight: 500px;
+}
