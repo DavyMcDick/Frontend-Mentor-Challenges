@@ -1,0 +1,91 @@
+@use '../util/' as *;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Figtree", sans-serif;
+}
+
+.wrapper {
+    height: 522px;
+    width: 384px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 1px #000000;;
+}
+
+.picture {
+    border-radius: 10px;
+    height: 200px;
+    width: 336px;
+    margin: 24px;
+}
+
+.details {
+    margin: 0 24px;
+    margin-bottom: 24px;
+    
+    h1 {
+        margin-bottom: 12px;
+        font-size: 24px;
+        font-weight: 900;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+    
+    }
+    p:nth-of-type(1) {
+        font-weight: 600;
+    }
+    
+    p:nth-of-type(2) {
+        font-weight: 400;
+        line-height: 150%;
+        color:  var(--secondary-light-color);
+    }
+}
+
+
+button {
+    height: 29px;
+    width: 82px;
+    padding: 4 12px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    border: none;
+    margin-bottom: 12px;
+}
+
+.author {
+    margin: 0 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 12px;
+
+    img {
+        height: 32px;
+    }
+
+    p {
+        font-weight: 900;
+    }
+}
