@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--blue-mainBG);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Outfit", serif;
+  border-radius: 10px;
+}
+
+.wrapper {
+  height: 590px;
+  width: 356px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+  padding: 0 16px;
+  box-shadow: 0px 0px 0px hsla(216, 48%, 13%, 0.733), -20px 30px 5px hsla(216, 48%, 13%, 0.733), 20px 30px 5px hsla(216, 48%, 13%, 0.733);
+}
+
+#picture {
+  height: 300px;
+  width: 320px;
+  margin-top: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-image: url(/images/image-equilibrium.jpg);
+  background-size: cover;
+  z-index: 0;
+}
+
+.bg {
+  position: absolute;
+  height: 300px;
+  width: 320px;
+  border-radius: 15px;
+  opacity: 0;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-color: aqua;
+}
+
+#picture .bg {
+  background-image: url(/images/icon-view.svg);
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+.bg:hover {
+  opacity: 0.5;
+}
+
+.details h1 {
+  color: var(--white);
+  margin: 26px 0 0 6px;
+}
+
+.details p {
+  font-weight: 300;
+  margin: 20px 0px 0px 6px;
+}
+
+.price-time {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.time img {
+  width: 17px;
+  height: 17px;
+}
+.time p {
+  color: var(--primary-clr1);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 6px;
+}
+.price img {
+  width: 11px;
+  height: 18px;
+}
+.price p {
+  color: var(--primary-clr2);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.creation {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--primary-clr1);
+  justify-content: center;
+  margin: 10px 30px;
+  padding: 15px 0 0 0;
+  line-height: 1.1;
+}
+.creation img {
+  height: 36px;
+  width: 36px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 8px 0 0;
+}
+.creation p {
+  font-size: 16px;
+  color: var(--primary-clr1);
+  align-items: center;
+}
+.creation p span {
+  font-weight: 600;
+  color: aliceblue;
+}
+.creation p span:hover {
+  color: var(--primary-clr2);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 0;
+  color: var(--primary-clr1);
+}
+
+:root {
+  --primary-clr1: hsl(215, 51%, 70%);
+  --primary-clr2: hsl(178, 100%, 50%);
+  --blue-mainBG: hsl(217, 54%, 11%);
+  --blue-cardBG: hsl(216, 50%, 16%);
+  --blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}/*# sourceMappingURL=style.css.map */
