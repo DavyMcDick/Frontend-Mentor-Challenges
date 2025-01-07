@@ -5,3 +5,5 @@ This repository contains projects from [Frontend Mentor](https://www.frontendmen
 |-----|-----------------------|---------------------|
 | 1   | [Blog Preview Card](https://davymcdick.github.io/Frontend-Mentor-Challenges/Blog%20Preview%20Card/)     | [Link to GitHub Repo](https://github.com/DavyMcDick/Frontend-Mentor-Challenges/tree/main/Blog%20Preview%20Card) |
 | 2   | [QR Code Component](https://davymcdick.github.io/Frontend-Mentor-Challenges/QR%20Code%20Component/)     | [Link to GitHub Repo](https://github.com/DavyMcDick/Frontend-Mentor-Challenges/tree/main/QR%20Code%20Component) |
+| 3   | [NFT Preview Card Component](https://davymcdick.github.io/Frontend-Mentor-Challenges/NFT%20preview%20card%20component/)    | [Link to GitHub Repo](https://github.com/DavyMcDick/Frontend-Mentor-Challenges/tree/main/NFT%20preview%20card%20component) |
+| 4   | [Social Link Profile](https://davymcdick.github.io/Frontend-Mentor-Challenges/Social%20link%20profile/)   |[Link to GitHub Repo](https://github.com/DavyMcDick/Frontend-Mentor-Challenges/tree/main/Social%20link%20profile) |
