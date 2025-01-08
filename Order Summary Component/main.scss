@@ -11,9 +11,24 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1 {
+    overflow-wrap: break-word;
 }
 
 body {
@@ -28,46 +43,53 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0 1.5rem ;
-}
-img {
-    display: block;
-
+    line-height: 1.5;
 }
 .wrapper {
-    width: 450px;
+    max-width: 100%;
+    width: 375px;
     overflow: hidden;
     background-color: white;
     border-radius: 10px;
     box-shadow: 20px 20px 20px -17px #3829e0b3;
 }
 main {
-    padding: 48px;
+    padding: 32px;
+    @media (max-width: 375px) {
+        padding: 24px;
+    }
+    }
+
+.details {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    }
-
-    .details {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; 
-        height: 100%;
-        text-align: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
     h1 {
         color: var(--dark-blue);
         font-size: 1.75rem;
         margin-bottom: 1rem;
         font-weight: 800;
+
+        @media (max-width: 375px) {
+                font-size: 25px;
+        }
     }
     p {
         color: var(--desaturated-blue);
-        line-height: 1.5;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 1rem;
-        padding: 0 32px;
         margin-bottom: 22px;
+        flex: 1;
+
+        @media (max-width: 375px) {
+            font-size: 14px;
     }
+    }
+    @media (max-width: 375px) {
+}
 }
 
 .anual-plan {
@@ -80,25 +102,27 @@ main {
     align-items: center;
     font-weight: bold;
     p {
-        line-height: 1.5;
         flex: 1;
         margin-left: 24px;
         span {
             color: var(--desaturated-blue);
-            font-weight: 400;
+            font-weight: 600;
         }
     }
     a {
         color: var(--bright-blue);
         font-size: 14px ;
-        font-weight: 400;
+        font-weight: 800;
     }
+    @media (max-width: 375px) {
+        font-size: 14px;
+        padding: 10px;
+}
 }
 
 .payments-btn {
     display: flex;
     flex-direction: column;
-
     button:nth-child(1) {
         margin-top: 24px;
         background-color: var(--bright-blue);
@@ -112,6 +136,10 @@ main {
         &:hover {
             opacity: .5;
         }
+        @media (max-width: 375px) {
+            font-size: 13px;
+            padding: 10px;
+    }
     }
     button:nth-child(2) {
         margin: 18px 0 12px 0; 
@@ -123,6 +151,11 @@ main {
             color: black;
             font-weight: 700;
         }
+        @media (max-width: 375px) {
+            font-size: 13px;
     }
-
+    }
+    
 }
+
+

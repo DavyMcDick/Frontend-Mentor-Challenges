@@ -10,9 +10,24 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1 {
+  overflow-wrap: break-word;
 }
 
 body {
@@ -27,14 +42,12 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0 1.5rem;
-}
-
-img {
-  display: block;
+  line-height: 1.5;
 }
 
 .wrapper {
-  width: 450px;
+  max-width: 100%;
+  width: 375px;
   overflow: hidden;
   background-color: white;
   border-radius: 10px;
@@ -42,19 +55,21 @@ img {
 }
 
 main {
-  padding: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 32px;
+}
+@media (max-width: 375px) {
+  main {
+    padding: 24px;
+  }
 }
 
 .details {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 100%;
   text-align: center;
+  height: 100%;
 }
 .details h1 {
   color: var(--dark-blue);
@@ -62,15 +77,23 @@ main {
   margin-bottom: 1rem;
   font-weight: 800;
 }
+@media (max-width: 375px) {
+  .details h1 {
+    font-size: 25px;
+  }
+}
 .details p {
   color: var(--desaturated-blue);
-  line-height: 1.5;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1rem;
-  padding: 0 32px;
   margin-bottom: 22px;
+  flex: 1;
 }
-
+@media (max-width: 375px) {
+  .details p {
+    font-size: 14px;
+  }
+}
 .anual-plan {
   display: flex;
   background-color: var(--very-pale-blue);
@@ -82,18 +105,23 @@ main {
   font-weight: bold;
 }
 .anual-plan p {
-  line-height: 1.5;
   flex: 1;
   margin-left: 24px;
 }
 .anual-plan p span {
   color: var(--desaturated-blue);
-  font-weight: 400;
+  font-weight: 600;
 }
 .anual-plan a {
   color: var(--bright-blue);
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 800;
+}
+@media (max-width: 375px) {
+  .anual-plan {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 
 .payments-btn {
@@ -114,6 +142,12 @@ main {
 .payments-btn button:nth-child(1):hover {
   opacity: 0.5;
 }
+@media (max-width: 375px) {
+  .payments-btn button:nth-child(1) {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
 .payments-btn button:nth-child(2) {
   margin: 18px 0 12px 0;
   border: none;
@@ -124,4 +158,9 @@ main {
 .payments-btn button:nth-child(2):hover {
   color: black;
   font-weight: 700;
+}
+@media (max-width: 375px) {
+  .payments-btn button:nth-child(2) {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=main.css.map */
