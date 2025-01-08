@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", serif;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-color: var(--pale-blue);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+img {
+  display: block;
+}
+
+.wrapper {
+  width: 450px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px -17px rgba(56, 41, 224, 0.7019607843);
+}
+
+main {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+.details h1 {
+  color: var(--dark-blue);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+.details p {
+  color: var(--desaturated-blue);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0 32px;
+  margin-bottom: 22px;
+}
+
+.anual-plan {
+  display: flex;
+  background-color: var(--very-pale-blue);
+  padding: 23px 16px;
+  font-size: 17px;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.anual-plan p {
+  line-height: 1.5;
+  flex: 1;
+  margin-left: 24px;
+}
+.anual-plan p span {
+  color: var(--desaturated-blue);
+  font-weight: 400;
+}
+.anual-plan a {
+  color: var(--bright-blue);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.payments-btn {
+  display: flex;
+  flex-direction: column;
+}
+.payments-btn button:nth-child(1) {
+  margin-top: 24px;
+  background-color: var(--bright-blue);
+  font-size: 1rem;
+  padding: 12px;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 20px 20px -17px rgba(56, 41, 224, 0.7019607843);
+}
+.payments-btn button:nth-child(1):hover {
+  opacity: 0.5;
+}
+.payments-btn button:nth-child(2) {
+  margin: 18px 0 12px 0;
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+  color: var(--desaturated-blue);
+}
+.payments-btn button:nth-child(2):hover {
+  color: black;
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */
