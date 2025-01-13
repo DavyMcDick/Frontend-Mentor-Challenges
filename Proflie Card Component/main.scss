@@ -36,7 +36,7 @@ body {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: right 45vw bottom 50vh, left 90vh top 50vh;
 }
