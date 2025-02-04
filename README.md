@@ -10,5 +10,5 @@ This repository contains projects from [Frontend Mentor](https://www.frontendmen
 | 5  | [Order Summary Component](https://davymcdick.github.io/Frontend-Mentor-Challenges/Order%20Summary%20Component/)  |[Link to Github Repo](https://github.com/DavyMcDick/Frontend-Mentor-Challenges/tree/main/Order%20Summary%20Component) |
 | 6  | [Profile Card Component](https://davymcdick.github.io/Frontend-Mentor-Challenges/Proflie%20Card%20Component)  |[Link to GitHub Repo](https://github.com/DavyMcDick/Frontend-Mentor-Challenges/tree/main/Proflie%20Card%20Component)|
 |  7 | [Intro component with Sign Up form](https://davymcdick.github.io/Frontend-Mentor-Challenges/Intro%20Component%20with%20Sign-up%20form/)  |[Link to GitHub Repo](https://github.com/DavyMcDick/Frontend-Mentor-Challenges/tree/main/Intro%20Component%20with%20Sign-up%20form)|
-|  7 | [Intro component with Sign Up form](https://davymcdick.github.io/Frontend-Mentor-Challenges/Intro%20Component%20with%20Sign-up%20form/)  |[Link to GitHub Repo](https://github.com/DavyMcDick/Frontend-Mentor-Challenges/tree/main/Intro%20Component%20with%20Sign-up%20form)|
+
 
