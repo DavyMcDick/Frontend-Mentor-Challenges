@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bridge Collective funds schools, trains teachers, and measures what works so every child can become a graduate.">
+  <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png">
+  <title>Bridge Collective | A classroom for every child</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="./menu.js" defer></script>
+</head>
+<body class="min-h-screen bg-blue-700 font-sans text-white lg:flex lg:flex-col">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="relative z-30 flex h-[var(--header-height)] shrink-0 items-center justify-between border-b border-white/15 bg-blue-700 px-6 lg:px-12">
+    <span class="flex items-center gap-1 text-sm"><span class="size-2.5 rounded-full bg-white" aria-hidden="true"></span>Bridge Collective</span>
+    <button id="menu-toggle" type="button" hidden class="-mr-3 flex size-11 cursor-pointer items-center justify-center rounded-sm hover:bg-blue-600" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-menu">
+      <img id="menu-icon" src="./assets/images/icon-menu.svg" alt="" width="24" height="24">
+    </button>
+  </header>
+
+  <!-- The introduction and statistics are siblings, so the whole layout can change together. -->
+  <main id="main-content" tabindex="-1" class="grid lg:flex-1 lg:grid-cols-[45%_55%]">
+    <section id="about" aria-labelledby="hero-title" class="flex min-w-0 flex-col justify-center gap-6 border-b border-white/10 px-8 py-[54px] lg:gap-10 lg:border-r lg:border-b-0 lg:px-12 lg:py-16">
+      <h1 id="hero-title" class="max-w-[470px] text-[44px] leading-[1.08] font-medium tracking-[-0.025em] lg:text-[60px]">A classroom <span class="lg:block">for every child.</span></h1>
+      <p class="max-w-[390px] text-[17px] leading-7 text-blue-200">We fund the schools, train the teachers, and measure what works &mdash; so every child we reach today becomes a graduate tomorrow.</p>
+    </section>
+
+    <section id="impact" aria-label="Our impact" class="grid min-w-0 grid-cols-1 md:grid-cols-2">
+      <article class="stat-card" aria-labelledby="students-label">
+        <div class="stat-top">
+          <img class="stat-icon" src="./assets/images/icon-sparkle.svg" alt="" width="32" height="32">
+          <p class="stat-number">2.4M</p>
+        </div>
+        <div>
+          <h2 id="students-label" class="stat-label">Students reached</h2>
+          <p class="stat-description">Across 31 countries since 2011.</p>
+        </div>
+      </article>
+      <article id="schools" class="stat-card" aria-labelledby="schools-label">
+        <div class="stat-top">
+          <img class="stat-icon" src="./assets/images/icon-plus.svg" alt="" width="32" height="32">
+          <p class="stat-number">1,284</p>
+        </div>
+        <div>
+          <h2 id="schools-label" class="stat-label">Schools partnered</h2>
+          <p class="stat-description">In 14 countries, from Kenya to Guatemala.</p>
+        </div>
+      </article>
+      <article class="stat-card" aria-labelledby="teachers-label">
+        <div class="stat-top">
+          <img class="stat-icon" src="./assets/images/icon-arrow-right.svg" alt="" width="32" height="32">
+          <p class="stat-number">38K</p>
+        </div>
+        <div>
+          <h2 id="teachers-label" class="stat-label">Teachers trained</h2>
+          <p class="stat-description">Equipped with modern tools and methodology.</p>
+        </div>
+      </article>
+      <article class="stat-card" aria-labelledby="graduation-label">
+        <div class="stat-top">
+          <img class="stat-icon" src="./assets/images/icon-trending-up.svg" alt="" width="32" height="32">
+          <p class="stat-number">3.1&times;</p>
+        </div>
+        <div>
+          <h2 id="graduation-label" class="stat-label">Graduation lift</h2>
+          <p class="stat-description">Partner schools outperform national averages 3x.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer id="charity" class="flex shrink-0 flex-col border-t border-white/15 px-6 py-6 text-sm leading-5 text-blue-200 md:flex-row md:justify-between lg:px-12 lg:py-[26px]">
+    <p>&copy; 2026 Bridge Collective</p>
+    <p>Registered charity 12345678</p>
+  </footer>
+
+  <div id="menu-overlay" class="fixed inset-0 z-10 bg-black/25" hidden aria-hidden="true"></div>
+  <nav id="site-menu" aria-label="Main navigation" class="menu-panel">
+    <ul class="flex flex-col gap-2">
+      <li><a class="menu-link" href="#about">About</a></li>
+      <li><a class="menu-link" href="#impact">Our Work</a></li>
+      <li><a class="menu-link" href="#schools">Partners</a></li>
+      <!-- Unavailable destinations are labeled honestly and are not clickable. -->
+      <li><span class="menu-link" role="link" aria-disabled="true">Annual Report<span class="sr-only"> (not available in this demo)</span></span></li>
+      <li><span class="menu-link" role="link" aria-disabled="true">Donate<span class="sr-only"> (not available in this demo)</span></span></li>
+    </ul>
+  </nav>
+</body>
+</html>

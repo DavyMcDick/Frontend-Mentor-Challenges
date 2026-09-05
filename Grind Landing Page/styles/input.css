@@ -1,0 +1,88 @@
+@import "tailwindcss" source(none);
+@source "../index.html";
+
+/* Shared design choices from style-guide.md. */
+@theme {
+  --font-sans: Inter, sans-serif;
+  --color-blue-200: hsl(224, 100%, 95%);
+  --color-blue-400: hsl(220, 100%, 64%);
+  --color-blue-600: hsl(228, 100%, 60%);
+  --color-blue-700: hsl(228, 99%, 58%);
+}
+@layer components {
+  .stat-card {
+    @apply flex min-w-0 min-h-[328px] flex-col justify-between gap-12 p-6 outline outline-1 outline-white/10 hover:bg-blue-600 lg:p-8;
+  }
+  .stat-top {
+    @apply flex items-start justify-between gap-4;
+  }
+  .stat-icon {
+    @apply mt-1 size-8;
+  }
+  .stat-number {
+    @apply text-[38px] leading-[1.2] font-medium;
+  }
+  .stat-label {
+    @apply text-[17px] leading-6 font-medium;
+  }
+  .stat-description {
+    @apply mt-1 text-sm leading-5 text-blue-200;
+  }
+  .menu-link {
+    @apply inline-block max-w-full text-[32px] leading-[1.35] tracking-[-0.04em] underline-offset-8;
+  }
+  a.menu-link {
+    @apply hover:underline focus-visible:underline;
+  }
+}
+
+/* The font URL is relative to the generated assets/styles.css file. */
+@layer base {
+  @font-face {
+    font-family: Inter;
+    src: url('./fonts/inter/inter-variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  [hidden] {
+    display: none !important;
+  }
+  body {
+    margin: 0;
+    background: hsl(228, 99%, 58%);
+    color: white;
+    font-family: Inter, sans-serif;
+  }
+  :focus-visible {
+    outline: 2px solid white;
+    outline-offset: 5px;
+  }
+}
+
+/* One header height keeps the header and open panel aligned. */
+:root {
+  --header-height: 4.5625rem;
+}
+@media (min-width: 64rem) {
+  :root {
+    --header-height: 4.5rem;
+  }
+}
+
+@layer components {
+  .menu-panel {
+    @apply bg-blue-700 px-6 py-12 text-center lg:px-12 lg:py-[52px] lg:text-right;
+  }
+
+  /* Without JavaScript, navigation stays visible in normal page order. */
+  .menu-ready .menu-panel {
+    @apply fixed right-0 z-20 w-full overflow-y-auto lg:bottom-0 lg:w-[27.5%];
+    top: var(--header-height);
+    max-height: calc(100dvh - var(--header-height));
+  }
+
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-40 focus:bg-blue-700 focus:p-3;
+  }
+}

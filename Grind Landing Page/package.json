@@ -1,0 +1,18 @@
+{
+  "name": "bridge-collective-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./styles/input.css -o ./assets/styles.css --watch",
+    "build": "tailwindcss -i ./styles/input.css -o ./assets/styles.css --minify",
+    "test": "npm run build && playwright test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3"
+  }
+}
