@@ -6,7 +6,7 @@ import VehicleCard from './components/VehicleCard'
 
 function App() {
   return (
-    <main className="min-h-screen flex items-center justify-center px-6 mt-[100px]">
+    <main className="min-h-screen flex items-center justify-center px-6 mt-10 lg:mt-0">
       
       <div className="w-full max-w-5xl lg:grid lg:grid-cols-3 overflow-hidden rounded-lg">
         
