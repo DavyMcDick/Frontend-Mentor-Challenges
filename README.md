@@ -32,6 +32,7 @@ Each project includes a **Live Demo** and a link to the **Source Code**.
 | 06 | **Profile Card Component** | [View Live ↗](https://davymcdick.github.io/Frontend-Mentor-Challenges/Proflie%20Card%20Component/) | [View Code](https://github.com/DavyMcDick/Frontend-Mentor-Challenges/tree/main/Proflie%20Card%20Component) |
 | 07 | **Intro Component with Sign Up Form** | [View Live ↗](https://davymcdick.github.io/Frontend-Mentor-Challenges/Intro%20Component%20with%20Sign-up%20form/) | [View Code](https://github.com/DavyMcDick/Frontend-Mentor-Challenges/tree/main/Intro%20Component%20with%20Sign-up%20form) |
 | 08 | **Grid Landing Page** | [View Live ↗](https://davymcdick.github.io/Frontend-Mentor-Challenges/Grid%20Landing%20Page/) | [View Code](https://github.com/DavyMcDick/Frontend-Mentor-Challenges/tree/main/Grid%20Landing%20Page) |
+| 08 | **3 Column preview card component main** | [View Live ↗](https://frontend-mentor-challenges-w8iv.vercel.app/) | [View Code](https://github.com/DavyMcDick/Frontend-Mentor-Challenges/tree/main/3%20Column%20preview%20card%20component%20main) |
 
 ---
 
